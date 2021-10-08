@@ -5,8 +5,8 @@ console.log("Hello from external JavaScript");
 alert("Welcome to my Website!");
 console.log("Welcome to my Website!");
 
-var userFavoriteColor = prompt("What is your favorite color?")
-console.log("Awesome! " + userFavoriteColor + " is my favorite color too!");
+var userFavoriteColor = prompt("What is your favorite color?");
+alert("Awesome! " + userFavoriteColor + " is my favorite color too!");
 
 // You have rented some movies for your kids: The little mermaid (for 3 days), Brother Bear (for 5 days, they love it), and Hercules (1 day, you don't know yet if they're going to like it). If price for a movie per day is $3, how much will you have to pay?
 var littleMermaid = prompt("How many days are you renting little mermaid?");
@@ -43,7 +43,7 @@ alert("Your paycheck this week is $" + totalPay + "!");
 var classFull = confirm("Is the class full?");
 var scheduleConflict =confirm("Does it conflict with your schedule?");
 
-let canEnroll =!classFull && !scheduleConflict;
+var canEnroll =!classFull && !scheduleConflict;
 
 if(canEnroll) {
     alert("Congratulations! Welcome to your new class!");
@@ -56,7 +56,7 @@ var itemsPurchased = confirm("Did you purchase more than 2 items?");
 var premiumMember= confirm("Are you a Premium member?");
 var offerExpired= confirm("Has the offer expired?");
 
-let productOffer =(itemsPurchased > 2 || premiumMember) && offerExpired;
+var productOffer =(itemsPurchased > 2 || premiumMember) && offerExpired;
 
 if(productOffer) {
     alert ("Great! offer applied!");
