@@ -101,8 +101,8 @@ alert("Tip is $" + calculateTip(tipPercent, totalBill));
  */
 
 function applyDiscount(price, discountPercent) {
-    return (price - discountPercent);
+    return price - discountPercent;
 }
-console.log(applyDiscount(100, 0.2));
+console.log(applyDiscount(45.99,0.12));
 
 })();
