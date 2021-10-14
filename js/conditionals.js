@@ -149,16 +149,15 @@ console.log(calculateTotal(0, 100));
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 6.
  * Prompt the user for their total bill, then use your `calculateTotal` function
- * and alerts to display to the user what their lucky number was, what their
- * price before the discount was, and what their price after the discount is.
+ * and alerts to display to the user what their lucky number was, what their* price before the discount was, and what their price after the discount is.
  */
 //Generate a random number between 0 and 6;
 var luckyNumber = Math.floor(Math.random() * 6);
-var totalAmount = 100
 
-prompt("Tell me the totalAmount");
+var totalAmount = parseFloat(prompt("What is your total amount?")).toFixed(2)
     alert("your number was " + luckyNumber);
-console.log(calculateTotal(0,100));
+    alert("you owe " + totalAmount);
+    alert(calculateTotal(luckyNumber, totalAmount));
 
 /**
  * TODO:
@@ -176,3 +175,23 @@ console.log(calculateTotal(0,100));
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+    confirm("would you like to enter a number?");
+    var typeNumber = (prompt("give me your number"));
+    if (typeNumber %2 == 0) {
+        alert(typeNumber +" is even!");
+    }else {
+        alert(typeNumber + " is odd!");
+    }
+    alert(typeNumber +" plus 100 is" + (typeNumber + 100));
+
+    if (typeNumber > 0) {
+        alert(typeNumber + "is positive");
+    }else{
+        alert(typeNumber + "is negative");
+    }else {
+        alert ("I need a number");
+}
+
+if (confirm("would you like to enter a number?");
+var userConfirmation =prompt("give me your number");
+
