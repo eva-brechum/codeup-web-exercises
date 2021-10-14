@@ -11,3 +11,10 @@ if(false) {
     console.log("What about me?");
 }
 })();
+
+var hadBreakfast = Boolean(Math.round(Math.random()));
+
+
+var hadBreakfast = (hadBreakfast) ? "I ate a bowl of cereal" : "I need to get some food";
+
+console.log(hadBreakfast);
