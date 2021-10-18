@@ -188,10 +188,10 @@ var totalAmount = parseFloat(prompt("What is your total amount?")).toFixed(2);
         alert(typeNumber + "is positive");
     }else{
         alert(typeNumber + "is negative");
-    }else {
+    }else{
         alert ("I need a number");
 }
 
-if (confirm("would you like to enter a number?");
+confirm("would you like to enter a number?");
 var userConfirmation = prompt("give me your number");
 
