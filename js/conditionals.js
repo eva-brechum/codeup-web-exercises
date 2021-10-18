@@ -154,7 +154,7 @@ console.log(calculateTotal(0, 100));
 //Generate a random number between 0 and 6;
 var luckyNumber = Math.floor(Math.random() * 6);
 
-var totalAmount = parseFloat(prompt("What is your total amount?")).toFixed(2)
+var totalAmount = parseFloat(prompt("What is your total amount?")).toFixed(2);
     alert("your number was " + luckyNumber);
     alert("you owe " + totalAmount);
     alert(calculateTotal(luckyNumber, totalAmount));
@@ -193,5 +193,5 @@ var totalAmount = parseFloat(prompt("What is your total amount?")).toFixed(2)
 }
 
 if (confirm("would you like to enter a number?");
-var userConfirmation =prompt("give me your number");
+var userConfirmation = prompt("give me your number");
 
