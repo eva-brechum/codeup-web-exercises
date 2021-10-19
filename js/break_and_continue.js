@@ -17,13 +17,18 @@
 var userNumber = Number(prompt("give me an odd number between 1 and 50?"))
 console.log("Number to skip is " + userNumber);
 
+
   for(var i = 1; i<50; i++) {
-      if(i%2===0){
+      if (i % 2 === 0) {
+          // console.log("We are skipping " + i);
           continue;
       }
-      if(userNumber === i){
-         console.log("We are skipping " + i);
-      }
-      if(i%2!==0)
-          console.log("Yikes! Skipping " + i);
+      if (userNumber === i) {
+          console.log("Yikes! Skipping " + userNumber);
+      }else{
+          console.log("Here's an odd number: " + i);
+  }
+          if (i >=49){
+              break;
+          }
   }

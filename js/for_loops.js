@@ -13,27 +13,20 @@ showMultiplicationTable(7);
 //
 //
 var randomNumber = Math.floor(Math.random() * (200 - 20 + 1)) + 20
-if (randomNumber % 2 === 0) {
-    console.log(randomNumber + " is even")
-}else {
-    console.log(randomNumber + " is odd");
-}
+// for (var i = 1; i < 100; i++) {
+    if (randomNumber % 2 === 0) {
+        console.log(randomNumber + " is even")
+    } else {
+        console.log(randomNumber + " is odd");
+    }
 
 
 // Create a for loop that uses console.log to create the output shown below.
-for(var i = 1; i < 10; i++) {
-console.log(i.toString().repeat(i));
-}
-// var totalNumberOfRows = 9;
-// var output = "";
-// for (var i = 1; i <= totalNumberOfRows; i++){
-//     for(var j = 1; j <= i; j++){
-//         output += j + "";
-//     }
-//     console.log("");
-// }
+    for (var x = 1; x < 10; x++) {
+        console.log(x.toString().repeat(x));
+    }
 
 // Create a for loop that uses console.log to create the output shown below.
-for(var i= 100; i >= 5; i-= 5) {
-    console.log(i);
+    for (var j = 100; j >= 5; j -= 5) {
+        console.log(j);
 }
