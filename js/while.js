@@ -14,8 +14,10 @@
 // 'Inside of the loop your code should generate another random number between 1 and 5, simulating the amount of cones being bought by her clients. ' +
 // 'Use a do-while loop to log to the console the amount of cones sold to each person. '
 
-    var allCones = Math.floor(Math.random() * 50) + 5;
+    var allCones = Math.floor(Math.random() * (50) + 50);
+console.lo
+    var conesSold = Math.floor(Math.random() * 5) + 1;
 
-    Math.floor(Math.random() * 5) + 1;
+
 
 })();
