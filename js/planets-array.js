@@ -30,7 +30,7 @@
     console.log('Removing "The Sun" from the beginning of the planets array.');
     console.log(planets);
 
-    planets.pop();
+    planets.pop("Pluto");
     console.log('Removing "Pluto" from the end of the planets array.');
     console.log(planets);
 
@@ -44,4 +44,5 @@
     planets.sort();
     console.log("Sorting the planets array.");
     console.log(planets);
+
 })();
