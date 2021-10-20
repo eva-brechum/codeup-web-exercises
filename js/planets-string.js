@@ -13,6 +13,7 @@
     var planetString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
     planetsArray = planetString.split("|");
     console.log(planetsArray);
+
     /**
      * TODO:
      * Create a string with <br> tags between each planet. console.log() your
@@ -32,4 +33,8 @@
     planetsArray.join("<ul></ul><li></li>");
    console.log(planetsArray);
 
+//    (David's solution)
+//    var unorderedListOfPlanets ="<ul><li>" + planetsArray.join("</li></li>") + "</li></ul>";
+// console.log(unorderedListOfPlanets)
+//     document.write(unorderedListOfPlanets);
 })();
