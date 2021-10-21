@@ -33,14 +33,22 @@
     //     this.lastName = lastName;
     // }
 
+    var person = {};
+    person.firstName = "Eva";
+    person.lastName = "Brechum";
 
-    var person = {
-    firstName: "Eva",
-    lastName: "Brechum"
     person.greeting = function () {
-        console.log(person.greeting()
-    }
-};
+        console.log("Hello from: " + person.firstName +  person.lastName);
+    };
+    person.greeting();
+
+//     var person = {
+//     firstName: "Eva",
+//     lastName: "Brechum",
+//     person.greeting = function () {
+//         console.log(person.greeting())
+//     }
+// };
     //console.log(person.sayHello());
     //     }
     // }
