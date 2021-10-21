@@ -68,3 +68,11 @@ function moveToEnd (arr) {
 }
 console.log(moveToEnd.push[0]);
 
+// Jay's Walkthrough
+// function moveToEnd(arr) {
+//      var removeElement = arr.shift();
+//      arr.push(removeElement);
+//      return arr;
+// }
+//
+// console.log(moveToEnd([1,2,3]));
