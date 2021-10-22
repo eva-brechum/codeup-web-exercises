@@ -37,21 +37,19 @@
     person.firstName = "Eva";
     person.lastName = "Brechum";
 
-    person.greeting = function () {
-        console.log("Hello from: " + person.firstName +  person.lastName);
+    person.sayHello = function () {
+        console.log("Hello from " + person.firstName + " " + person.lastName + "!");
     };
-    person.greeting();
+    person.sayHello();
 
-//     var person = {
-//     firstName: "Eva",
-//     lastName: "Brechum",
-//     person.greeting = function () {
-//         console.log(person.greeting())
-//     }
-// };
-    //console.log(person.sayHello());
+    //     var person = {
+    //     firstName: "Eva",
+    //     lastName: "Brechum",
+    //     person.greeting = function () {
+    //         console.log(person.greeting())
     //     }
-    // }
+    // };
+        //console.log(person.sayHello());
 
 
     /** TODO:
@@ -68,11 +66,12 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+
+    var shoppers = [
+       {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+         {name: 'George', amount: 320}
+     ];
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -86,6 +85,46 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+var books = [
+    {
+    title: "Kite Runner",
+    author: {
+        firstName: "Khaled",
+        lastName: "Hosseini"
+    }
+    },
+        {
+            title: "Children of Blood and Bone",
+            author: {
+                firstName: "Tomi",
+                lastName: "Adeyemi"
+            }
+        },
+        {
+            title: "Who Fears Death",
+            author: {
+                firstName: "Nnedi",
+                lastName: "Okorafor"
+            }
+        },
+        {
+            title: "Bird",
+            author: {
+                firstName: "Pat",
+                lastName: "Geo"
+            }
+        },
+        {
+            title: "Sula",
+            author: {
+                firstName: "Toni",
+                lastName: "Morrison"
+            },
+        }
+    ];
+console.log(books[0].title);
+console.log(books[0].author.firstName);
+console.log(books[0].author.lastName);
 
     /**
      * TODO:
@@ -111,6 +150,7 @@
      *      ---
      *      ...
      */
+
 
     /**
      * Bonus:
