@@ -11,7 +11,7 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-    person = {
+    var person = {
         firstName: "Eva",
         lastName: "Brechum",
     };
@@ -72,9 +72,9 @@
          {name: 'George', amount: 320}
      ];
 
-    shoppers.forEach(function(shoppers) {
-        if (shoppers.amount >= 200){
-            console.log("Hello " + shoppers.name + " your total is $ " + shoppers.amount + " your discount is 12%");
+    shoppers.forEach(function(shopper) {
+        if (shopper.amount >= 200){
+            console.log("Hello " + shopper.name + " your total is $ " + shoppers.amount + " your discount is 12%");
     }else if(shoppers.amount <=200) {
              console.log(shoppers.name + " you do not qualify for the discount today");
          }
@@ -158,12 +158,17 @@ console.log(books[0].author.lastName);
      *      ...
      */
 
-     books.forEach(function(book,index){
-    console.log ("your book number is " + books.indexOf(book) + 1);
-    console.log ("the book title is " + books[2])
-         console.log("")
+     books.forEach(function(book, index){
+    console.log ("your book number is " + books.indexOf(book) +1);
+    console.log ("the book title is " + books.indexOf(title) + 1)
+         console.log("the author of this book is " + books.indexOf(author) + 1)
     })
 
+     // (Jay's Solution)
+     // for (var j = 0; j <books.length; j++){
+     //     console.log("Book # " + (j+1) + "\nTitle: " + books[j].title + "\nAuthor: " + books[j].author.firstName + "" + books[j].author.lastName)
+     //
+     //    }
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
