@@ -157,13 +157,12 @@ console.log(books[0].author.lastName);
      *      ---
      *      ...
      */
-    // var book = 0
-    // books.forEach(function(){
-    // if(book.)
-    //
-    //     return(books[0]+ title + author)
-    //         console.log(output);
-    // })
+
+     books.forEach(function(book,index){
+    console.log ("your book number is " + books.indexOf(book) + 1);
+    console.log ("the book title is " + books[2])
+         console.log("")
+    })
 
     /**
      * Bonus:
