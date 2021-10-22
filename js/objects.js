@@ -11,7 +11,7 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-    var person = {
+    person = {
         firstName: "Eva",
         lastName: "Brechum",
     };
@@ -66,12 +66,15 @@
      * and console.log the relevant messages for each person
      */
 
-
     var shoppers = [
        {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
          {name: 'George', amount: 320}
      ];
+
+//     shoppers.forEach(function[]{
+//         console.log("Hello " + name[0] + "your total is $ ", + amount)
+// })
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -150,7 +153,7 @@ console.log(books[0].author.lastName);
      *      ---
      *      ...
      */
-
+    book for
 
     /**
      * Bonus:
@@ -162,5 +165,7 @@ console.log(books[0].author.lastName);
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-
+books.createBook = function (title, author){
+    return (title + author);
+  }
 })();
