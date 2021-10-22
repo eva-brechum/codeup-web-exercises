@@ -72,9 +72,13 @@
          {name: 'George', amount: 320}
      ];
 
-//     shoppers.forEach(function[]{
-//         console.log("Hello " + name[0] + "your total is $ ", + amount)
-// })
+    shoppers.forEach(function(shoppers) {
+        if (shoppers.amount >= 200){
+            console.log("Hello " + shoppers.name + " your total is $ " + shoppers.amount + " your discount is 12%");
+    }else if(shoppers.amount <=200) {
+             console.log(shoppers.name + " you do not qualify for the discount today");
+         }
+})
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -153,10 +157,13 @@ console.log(books[0].author.lastName);
      *      ---
      *      ...
      */
-    books.forEach(function () {
-        return(books[0]+ title + author)
-            console.log(output);
-    })
+    // var book = 0
+    // books.forEach(function(){
+    // if(book.)
+    //
+    //     return(books[0]+ title + author)
+    //         console.log(output);
+    // })
 
     /**
      * Bonus:
@@ -168,7 +175,8 @@ console.log(books[0].author.lastName);
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-books.createBook = function (title, author){
-    return (title + author);
-  }
+// books.createBook = function (title, author){
+//     return parseFloat(title + author);
+//   }
+//   console.log(parseFloat().createBook());
 })();
