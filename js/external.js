@@ -37,7 +37,7 @@ var facebookHours = prompt("How many hours did you work this week at Facebook?")
 console.log("10");
 
 let totalPay = googleRatePerHour * googleHours + amazonRatePerHour * amazonHours + facebookRatePerHour * facebookHours;
-alert("Your paycheck this week is $" + totalPay + "!");
+alert("Your paycheck this week is $ " + totalPay + "!");
 
 // A student can be enrolled in a class only if the class is not full and the class schedule does not conflict with her current schedule.
 var classFull = confirm("Is the class full?");
