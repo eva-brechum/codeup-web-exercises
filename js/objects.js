@@ -153,7 +153,10 @@ console.log(books[0].author.lastName);
      *      ---
      *      ...
      */
-    book for
+    books.forEach(function () {
+        return(books[0]+ title + author)
+            console.log(output);
+    })
 
     /**
      * Bonus:
