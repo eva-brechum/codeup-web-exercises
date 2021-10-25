@@ -180,7 +180,7 @@ var totalAmount = parseFloat(prompt("What is your total amount?"));
     }else {
         alert(typeNumber + " is odd!");
     }
-    alert(typeNumber + " plus 100 is " + (typeNumber + 100));
+    alert(typeNumber + " plus 100 is " + typeNumber + 100);
 
     if (typeNumber > 0) {
         alert(typeNumber + " is positive");
