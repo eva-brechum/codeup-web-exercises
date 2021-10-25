@@ -76,3 +76,12 @@ console.log(moveToEnd.push[0]);
 // }
 //
 // console.log(moveToEnd([1,2,3]));
+
+var Charmander= [
+    {
+         name: "Charmander",
+     category: "Lizard",
+         type: "Fire",
+         weakness: ["water", "ground", "rock"]
+}
+]

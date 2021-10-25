@@ -15,9 +15,12 @@
 // 'Use a do-while loop to log to the console the amount of cones sold to each person. '
 
     var allCones = Math.floor(Math.random() * (50) + 50);
-console.lo
-    var conesSold = Math.floor(Math.random() * 5) + 1;
-
+console.log("Today I will be selling " + allCones)
+var conesSold = Math.floor(Math.random() * 5) + 1;
+if(allCones -= conesSold) {
+    console.log("I sold " + conesSold + " I have " + allCones + " left to sell")
+}while(allCones === 0 );
+console.log("Thank you for coming to my shop, I am sold out for today!");
 
 
 })();
