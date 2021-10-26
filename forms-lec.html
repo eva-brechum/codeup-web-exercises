@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Make Forms</title>
+</head>
+<body>
+    <h1>Forms Lecture</h1>
+    <form method="POST" action="https://request-inspector.glitch.me/">
+        <label for="username">Username</label>
+        <input id="username" name="user" type="text">
+        <br>
+        <label for="password">Password</label>
+        <input id="password" name="pass" type="password">
+        <br>
+        <label for="bio">Tell Me About Yourself</label>
+        <br>
+        <textarea name="bio" id="bio" cols="35" rows="12">Welcome to my life's adventures</textarea>
+        <br>
+        <input type="checkbox" name="emailSignup" value="true" checked>Subscribe for daily emails?
+        <br>
+        <hr>
+        <h2>Check all that are true:</h2>
+        <label for="quiz#1">Rihanna is a musician</label><input type="checkbox" name="quiz" id="quiz#1" value="A"><br>
+        <label for="quiz#2">Rihanna is from Barbados</label><input type="checkbox" name="quiz" id="quiz#2" value="B"><br>
+        <label for="quiz#3">Rihanna is married to Carlos Santana</label><input type="checkbox" name="quiz" id="quiz#3" value="C"><br>
+        <br>
+        <hr>
+        <h2>"Take my Breath" is a song by the artist_______</h2>
+        <input type="radio" name="radioQuestion" id="tmb-1" value="Destiny's Child"><label for="tmb-1">Beyonce</label><br>
+        <input type="radio" name="radioQuestion" id="tmb-2" value="Black Atlass"><label for="tmb-2">Black Atlass</label><br>
+        <input type="radio" name="radioQuestion" id="tmb-3" value="The Weeknd"><label for="tmb-3">The Weeknd</label><br>
+        <br>
+        <hr>
+        <label for="select">What is your favorite streaming service?</label>
+        <select name="strm service" id="select">
+            <option value="max">HBOMax</option>
+            <option value="flix">Netflix</option>
+            <option value="prime">Prime Video</option>
+            <option value="plus">Disney Plus</option>
+            <option value="hulu">Hulu</option>
+        </select>
+        <br>
+        <input type="hidden" name="secret-user-id" value="13">
+        <br>
+        <label for="gender"></label>
+        <br>
+        <button type="submit">Submit Your Information</button>
+    </form>
+</body>
+</html>
