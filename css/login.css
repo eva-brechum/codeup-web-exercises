@@ -11,6 +11,7 @@ body, html {
 }
 
 form {
+    font-size: 1em;
     /* This form should be separated from other elements by 1em */
     /* There must be 1em between the content and the border of this element */
 }
@@ -19,17 +20,21 @@ fieldset {
     -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
+    background-color: #ffff;
     /* There must be 1em between the content and the border of this element */
     /* It should have no border */
     /* Its background should be white */
 }
 
 .width-80 {
+    width: 80%;
+    margin: 0 auto;
     /* The element with this class should 80% of the width and it must be centered */
     /* Read how to center elements with margin here: http://learnlayout.com/margin-auto.html*/
 }
 
 .form-group {
+    width: 100%;
     /* This element must use 100% of the width */
     /* It should have a separation of .5em from elements on top of it and below it*/
 }
