@@ -30,7 +30,7 @@ a {
     width: 100%;
     position:fixed;
     display: inline-block;
-    top: 0;
+    /*top: 0;*/
     text-align: center;
 }
 .nav {
@@ -76,11 +76,13 @@ a {
 }
 
 .profile-image{
+    float: left;
     position: absolute;
-    top: 12em;
+    top: 240px;
 }
 
 .profile-form{
     float: right;
-    line-height: normal;
+    line-height: 500%;
+    top: 200px;
 }
