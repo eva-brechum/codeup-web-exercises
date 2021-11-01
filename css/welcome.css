@@ -1,9 +1,11 @@
 body{
     background-color: #fad2d6;
     background-image: url("/img/delberghe.jpeg");
+    font-family: Helvetica, serif;
+    font-style: italic;
 }
 
-.fancy-header{
+h1.fancy-header{
     text-align: center;
 }
 
@@ -13,7 +15,7 @@ h2{
 }
 
 ol {
-    list-style: square;
+    list-style: circle;
 }
 
 ul {
@@ -22,7 +24,7 @@ ul {
 
 table, th, td {
     border: solid purple;
-    padding: 2px;
+    padding: 6px;
 }
 
 th{
