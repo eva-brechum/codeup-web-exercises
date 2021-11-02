@@ -124,19 +124,64 @@ function filterForCanadian(arr){
     });
     return bucket;
 }
-.log(filterForCanadian(wrestlers));
+console.log(filterForCanadian(wrestlers));
 
-var circle = {
-    radius: 36
+// var circle = {
+//     radius: 36
+// }
+//     return (2 * Math.PI * radius){
+// }
+
+//  (Jay's Walkthrough)
+//
+// var circle = {
+//     radius: 36
+// }
+// if (areaof circle = Pi * radius^2){
+//
+// var area = Math.Round(Math.PI);
+
+var groceries = [
+    {
+        name: "carrots",
+        quantity: 5
+    },{
+        name: "yams",
+        quantity: 50
+    },{
+        name: "oranges",
+        quantity: 9
+    },{
+        name: "onions",
+        quantity: 2
+    },{
+        name: "cucumbers",
+        quantity: 6
+    },{
+        name: "potatoes",
+        quantity: 8
+    }
+];
+
+function getHighestQuantityObject(arr) {
+    var quantity = [];
+    arr.forEach(function(object) {
+        if(object.quantity
+    }
+
 }
-    return (2 * Math.PI * radius){
+
+// David's Walkthrough
+function getHighestQuantityObject(arr) {
+    var object = {
+        name: "something",
+        quantity: 0
+    }
+    arr.forEach(function (element) {
+        if (element.quantity > object.quantity) {
+            object = element;
+        }
+    })
+    return object;
 }
-
-// (Jay's Walkthrough)
-
-var circle = {
-    radius: 36
-}
-if (area of circle = Pi * radius^2){
-
-var area = Math.Round(Math.PI)
+console.log(getHighestQuantityObject(groceries));
