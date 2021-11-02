@@ -1,0 +1,49 @@
+body{
+    background-color: #fad2d6;
+    background-image: url("/img/delberghe.jpeg");
+    font-family: Helvetica, serif;
+    font-style: italic;
+}
+
+h1.fancy-header{
+    text-align: center;
+}
+
+h2{
+    text-decoration: underline;
+    color: orangered;
+}
+
+ol {
+    list-style: circle;
+}
+
+ul {
+    list-style: circle;
+}
+
+table, th, td {
+    border: solid purple;
+    padding: 6px;
+}
+
+th{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:link{
+    color: chocolate;
+}
+
+a:visited{
+    color: deeppink;
+}
+
+a:hover{
+    color: greenyellow;
+}
+
+a:active{
+    color:red;
+}
