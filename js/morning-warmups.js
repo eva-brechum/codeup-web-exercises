@@ -125,3 +125,18 @@ function filterForCanadian(arr){
     return bucket;
 }
 .log(filterForCanadian(wrestlers));
+
+var circle = {
+    radius: 36
+}
+    return (2 * Math.PI * radius){
+}
+
+// (Jay's Walkthrough)
+
+var circle = {
+    radius: 36
+}
+if (area of circle = Pi * radius^2){
+
+var area = Math.Round(Math.PI)
