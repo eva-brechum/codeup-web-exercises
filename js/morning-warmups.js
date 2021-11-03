@@ -163,25 +163,73 @@ var groceries = [
     }
 ];
 
-function getHighestQuantityObject(arr) {
-    var quantity = [];
-    arr.forEach(function(object) {
-        if(object.quantity
-    }
+// function getHighestQuantityObject(arr) {
+//     var quantity = [];
+//     arr.forEach(function(object) {
+//         if(object.quantity){
+//     }
+//
+//
+// // David's Walkthrough
+// function getHighestQuantityObject(arr) {
+//     var object = {
+//         name: "something",
+//         quantity: 0
+//     }
+//     arr.forEach(function (element) {
+//         if (element.quantity > object.quantity) {
+//             object = element;
+//         }
+//     })
+//     return object;
+// }
+// // console.log(getHighestQuantityObject(groceries));
 
-}
+// Write a function named ‘sortByName’ that takes in an array of objects, and
+// returns an array of objects in alphabetical order based on the name property.
 
-// David's Walkthrough
-function getHighestQuantityObject(arr) {
-    var object = {
+var products = [
+    {
+        name: 'Playstation 5',
+        price: 599.99
+    }, {
+        name: 'Logitech Wireless Mouse',
+        price: 23.99
+    }, {
+        name: 'Macbook Pro',
+        price: 1099.99
+    }, {
+        name: 'GoPro HERO10',
+        price: 399.99
+    }, {
+        name: '12" & 6" Metal Ruler Set',
+        price: 5.99
+    }]
+
+
+    var sort = [{
         name: "something",
-        quantity: 0
-    }
-    arr.forEach(function (element) {
-        if (element.quantity > object.quantity) {
-            object = element;
+    }];
+    function sortByName(arr){
+    return products.sort();
+}
+console.log(sortByName(products));
+
+
+// Jay's Walkthrough
+function sortByName(arr) {
+    return arr.sort(function (a, b) {
+        var aLower = a.name.toLowerCase();
+        var bLower = b.name.toLowerCase();
+        if (aLower < bLower) {
+            return -1;
+        } else if (aLower > bLower) {
+            return 1;
+        } else {
+            return 0;
         }
     })
-    return object;
 }
-console.log(getHighestQuantityObject(groceries));
+console.log(sortByName(products))
+
+}
