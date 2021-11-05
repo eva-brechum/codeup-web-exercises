@@ -1,4 +1,4 @@
-.jumbotron jumbotron-fluid{
+.jumbotron {
     margin-top: 20px;
 background-image: url("https://java.codeup.com/examples/bootstrap/pizza.png");
     background-size: cover
