@@ -1,3 +1,7 @@
-.nav-link{
-    color:black;
+@media all and (max-width: 576px) {
+    .nav-link {
+        flex-direction: row;
+        list-style: none;
+        color: black;
+    }
 }
