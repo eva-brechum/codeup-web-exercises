@@ -216,20 +216,87 @@ var products = [
 console.log(sortByName(products));
 
 
-// Jay's Walkthrough
-function sortByName(arr) {
-    return arr.sort(function (a, b) {
-        var aLower = a.name.toLowerCase();
-        var bLower = b.name.toLowerCase();
-        if (aLower < bLower) {
-            return -1;
-        } else if (aLower > bLower) {
-            return 1;
-        } else {
-            return 0;
-        }
-    })
-}
-console.log(sortByName(products))
+// // Jay's Walkthrough
+// function sortByName(arr) {
+//     return arr.sort(function (a, b) {
+//         var aLower = a.name.toLowerCase();
+//         var bLower = b.name.toLowerCase();
+//         if (aLower < bLower) {
+//             return -1;
+//         } else if (aLower > bLower) {
+//             return 1;
+//         } else {
+//             return 0;
+//         }
+//     })
+// }
+// console.log(sortByName(products));
+//
+// })
 
+var bBallPlayers = [
+    {
+        name: "Hakeem Olajuwon",
+        height: 213
+    }, {
+        name: "Muggsy Bogues",
+        height: 160
+    }, {
+        name: "Chris Paul",
+        height: 183
+    }, {
+        name: "Bol Bol",
+        height: 218
+    }, {
+        name: "Moochie Norris",
+        height: 185
+    }, {
+        name: "Manu Ginobili",
+        height: 198
+    }
+];
+
+// Write a function in JavaScript that takes in an array of objects and
+// returns the object with the lowest height property.
+// Consider the following array to test your code.
+
+// function lowestHeightProperty(arr){
+//     var lowheight = [];
+//     arr.forEach(function(element){
+//         if(element.height> lowheight)
+//     }
+// }
+//
+// Walkthrough
+// function findShortest(arr) {
+//     var holdThis = {height: Number.MAX_VALUE};
+//     arr.forEach(function (element) {
+//         if (element.height < holdThis.height) {
+//             holdThis = el;
+//         }
+//     })
+// }))
+
+var myCharacter = {
+    name: 'Jupiter Jones',
+    hitPoints: 100,
+    class: 'Warrior',
+    abilities: {
+        attack: function(myCharacter) {
+            let (this.attack = myCharacter + enemy){}
+        },
+    },
+    magicPoints: 0,
+    weapon: {
+        name: 'Silver Sabre',
+        damage: 16,
+        type: 'sword'
+    }
+}
+
+var enemy = {
+    name: 'Savage Orc',
+    hitPoints: 100,
+    class: 'Warrior',
+    magicPoints: 0,
 }
