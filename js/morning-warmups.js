@@ -284,7 +284,7 @@ var myCharacter = {
     abilities: {
         // attack: function(myCharacter) {
         //     let (this.attack = myCharacter + enemy){}
-        // Exercise Walkthrough
+        // Exercise Walkthrough with Jay
         attack: function(obj) {
             console.log(myCharacter.name + "hit" + obj.name + "for" + myCharacter.weapon.damage + "damage")
             obj.hitPoints -= myCharacter.weapon.damage;
