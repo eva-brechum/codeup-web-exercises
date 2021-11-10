@@ -282,9 +282,14 @@ var myCharacter = {
     hitPoints: 100,
     class: 'Warrior',
     abilities: {
-        attack: function(myCharacter) {
-            let (this.attack = myCharacter + enemy){}
-        },
+        // attack: function(myCharacter) {
+        //     let (this.attack = myCharacter + enemy){}
+        // Exercise Walkthrough
+        attack: function(obj) {
+            console.log(myCharacter.name + "hit" + obj.name + "for" + myCharacter.weapon.damage + "damage")
+            obj.hitPoints -= myCharacter.weapon.damage;
+            console.log(obj.name + "has" + obj.hitPoints + "hit points left")
+        }
     },
     magicPoints: 0,
     weapon: {
