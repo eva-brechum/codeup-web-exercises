@@ -305,3 +305,16 @@ var enemy = {
     class: 'Warrior',
     magicPoints: 0,
 }
+
+// function takes in array and returns random element from array
+//
+// function randomElement (arr){
+//     var items =items[Math.floor(Math.random()*items.length)];
+// }
+// return randomElement(items();
+
+Walthrough
+function randomElement (arr){
+    return arr[Math.floor(Math.random()* arr.length)];
+}
+console.log(randomElement(["rock", "paper", "scissors"]));
