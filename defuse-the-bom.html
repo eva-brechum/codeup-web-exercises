@@ -28,11 +28,20 @@
         detonationTimer--;
     }, interval);
 
+    // (Walkthrough)
+    // var bombInterval = setInterval(updateTimer, 1000);
+
     // TODO: When this function runs, it needs to
     // cancel the interval/timeout for updateTimer()
     function defuseTheBOM(){
         clearInterval(intervalID)
     }
+    // (Walkthrough)
+    // function defuseTheBOm() {
+    //     clearInterval(bombInterval);
+    //     alert("AVERTED CRISIS");
+    //     window.location ="https://"
+    // }
 
     // Don't modify anything below this line!
     //
