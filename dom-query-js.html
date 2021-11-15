@@ -51,10 +51,10 @@
         // TODO: Uncomment the next line and get all list items
 
         var listItems = document.getElementsByTagName("li");
-        for (var i = 0; i < listItems.length; i++) {
-            var dbId = listItems[i].getAttribute("data-dbid");
-            console.log(dbId);
-        }
+        // for (var i = 0; i < listItems.length; i++) {
+        //     var dbId = listItems[i].getAttribute("data-dbid");
+            console.log(listItems);
+
 
         // TODO: Set text color on every other list item to grey
         // TODO: Set text color of li with dbid = 1 to blue
@@ -73,8 +73,7 @@
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
 
-        subParagraphs.innerHTML = "Mission Accomplished";
-        console.log(subParagraphs);
+        subParagraphs[0].innerHTML = "Mission Accomplished";
 
     })();
 </script>
