@@ -24,10 +24,10 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-<button id="btn1">Button 1</button>
-<button id="btn2">Button 2</button>
-<button id="btn3">Button 3</button>
-<button id="btn4">Button 4</button>
+<button id="btn1">Change Main Headerr</button>
+<button id="btn2">Change SubHeader to Blue </button>
+<button id="btn3">Change List Item Color</button>
+<button id="btn4">Mission Accomplished</button>
 
 <script>
     (function() {
@@ -86,38 +86,38 @@
 
         subParagraphs[0].innerHTML = "Mission Accomplished";
 
-        // Add four buttons
-        var btn1 = document.getElementById("btn1");
-        // btn1.addEventListener("click", listener);
-        var btn2 = document.getElementById("btn2");
-        var btn3 = document.getElementById("btn3");
-        var btn4 = document.getElementById("btn4");
-
-
-        var clicker = function () {
-            this.innerHTML = "clicked";
-            this.removeEventListener("click", click, false);
-            this.addEventListener("click", function() {
-                this.innerHTML = "Javascript is Cool";
-            })
-        };
-        var colorThis = function() {
-            this.innerHTML = "colored";
-            this.style.backgroundColor = "yellow";
-            console.log(colorThis());
-        };
-
-        var btn3 = function () {
-            if (btn3.style.backgroundColor === "pink") {
-                btn3.style.backgroundColor === "";
-            }else btn3.style.backgroundColor = "pink";
-        };
-
-        var btn4 = function() {
-            if (btn4.style.backgroundColor === "peach") {
-                btn4.style.backgroundColor = "";
-            }else btn4.style.backgroundColor = "orange";
-        }
+        // // Add four buttons
+        // var btn1 = document.getElementById("btn1");
+        // // btn1.addEventListener("click", listener);
+        // var btn2 = document.getElementById("btn2");
+        // var btn3 = document.getElementById("btn3");
+        // var btn4 = document.getElementById("btn4");
+        //
+        //
+        // var clicker = function () {
+        //     this.innerHTML = "clicked";
+        //     this.removeEventListener("click", click, false);
+        //     this.addEventListener("click", function() {
+        //         this.innerHTML = "Javascript is Cool";
+        //     })
+        // };
+        // var colorThis = function() {
+        //     this.innerHTML = "colored";
+        //     this.style.backgroundColor = "yellow";
+        //     console.log(colorThis());
+        // };
+        //
+        // var btn3 = function () {
+        //     if (btn3.style.backgroundColor === "pink") {
+        //         btn3.style.backgroundColor === "";
+        //     }else btn3.style.backgroundColor = "pink";
+        // };
+        //
+        // var btn4 = function() {
+        //     if (btn4.style.backgroundColor === "peach") {
+        //         btn4.style.backgroundColor = "";
+        //     }else btn4.style.backgroundColor = "orange";
+        // }
 
 
     })();
