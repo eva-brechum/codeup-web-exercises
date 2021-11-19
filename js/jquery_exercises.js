@@ -1,4 +1,6 @@
 "use strict";
 
-var content = $('#paragraph1').html();
-alert(content);
+console.log("This is linked");
+
+var contents = $('#paragraph1').html();
+alert(contents);
