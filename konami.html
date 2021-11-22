@@ -25,9 +25,24 @@
     $(document).ready(function(){
     "use strict";
     var input = [];
-    var konamiCode = [38,38,40,40 37, 39, 37]
-        $(document).keyup(function(event) {
+    var konamiCode = [38,38,40,40 37, 39, 37, 39, 66, 65, 13]
 
+        function compareArrays(array1, array2) {
+    for (var i=0; i<array2.length; i++){
+        if(array1[i] !==array2[i]) {
+            return false
+        }
+    }
+    return true
+    }
+        $(document).keyup(function(event) {
+        input.push(event.keyCode);
+        if(compareArrays(input, konamiCode){
+            $("body").html("<h1>Konami Code</h1>" +
+            "<h1>You have added 30 lives!!!</h1>" +
+            "<embed src='")
+        }
+        }
             console.log(event.keyCode);
     });
     //
