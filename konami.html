@@ -14,8 +14,8 @@
     </style>
 </head>
 <body id="main-content">
-<h1>Konami Code</h1>
-<h1>You have added 30 lives!!</h1>
+<h1 style="color:fuchsia">Konami Code</h1>
+<!--<h1>You have added 30 lives!!</h1>-->
 <img src="img/ruby-sapphire.jpeg" id="gems">
 <!--<img src="img/Garnet.png" id="fusion">-->
 <button class="FUSE">Let's Fuse</button>
@@ -42,12 +42,12 @@
         if(compareArrays(input, konamiCode)) {
             $("body").html('<h1>Konami Code</h1' +
              '<img src="img/ruby-sapphire.jpeg" />'+
-            '<embed src="logo.mp3" hidden="true" autostart="true" loop="false" />');
+            '<embed src="<iframe width="560" height="315" src="https://www.youtube.com/embed/IAoNk5KG-04?start=65" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"/>');
             input = [];
         }else if (input.length === 11 && !compareArrays(input, konamiCode)) {
             input = [];
         }else {
-            $("body").html('<h1>You have added 30 lives!!</h1>' +
+            $("body").html('<h1 style="color: #f8bff8">You have added 30 lives!!</h1>' +
             '<img src="img/Garnet.png" />');
         }
             console.log(input);
@@ -55,9 +55,20 @@
     });
 
 
+    // let keys = {
+    //     37: "left",
+    //     38: "up",
+    //     39: "right",
+    //     40: "down",
+    //     65: "a",
+    //     66: "b"
+    // };
     //
+    // let konamiCode = ["up", "up", "down", "down", "left", "right", "left", "right", "b", "a"];
     //
+    //     let konamiCodePosition = 0;
     //
+    //     let timerID;
     //     function activateCheats() {
     //         document.body.style.backgroundImage = url("img/ruby-sapphire.jpeg");
     //
@@ -66,19 +77,6 @@
     //
     //         alert("You have added 30 lives!");
     //     }
-    //
-    //     var keysAllowed = {
-    //         37: "left",
-    //         38: "up",
-    //         39: "right",
-    //         40: "down",
-    //         65: "b",
-    //         66: "a"
-    //     };
-    //
-    //     var konamiCode = ["up", "up", "down", "down", "left", "right", "left", "right", "b", "a"];
-    //
-    //     var konamiCodePosition = 0;
     //
     //     document.addEventListener("keydown", function (e) {
     //
