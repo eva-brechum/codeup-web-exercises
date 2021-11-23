@@ -16,6 +16,7 @@
 <body id="main-content">
 <h1>Konami Code</h1>
 <h1>You have added 30 lives!!</h1>
+<img src="img/ruby-sapphire.jpeg">
 <img src="img/Garnet.png" id="fusion">
 <button class="FUSE">Let's Fuse</button>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -40,14 +41,14 @@
         input.push(event.keyCode);
         if(compareArrays(input, konamiCode)) {
             $("body").html('<h1>Konami Code</h1' +
-             '<img src="img/Garnet.png' +
-            '<h1>You have added 30 lives!!!</h1>' +
+             '<img src="img/ruby-sapphire.jpeg" />'+
             '<embed src="logo.mp3" hidden="true" autostart="true" loop="false" />');
             input = [];
         }else if (input.length === 11 && !compareArrays(input, konamiCode)) {
             input = [];
         }else {
-            $("body").html('<h1>Konami Code</h1>');
+            $("body").html('<h1>You have added 30 lives!!</h1>' +
+            '<img src="img/Garnet.png" />');
         }
             console.log(input);
     });
