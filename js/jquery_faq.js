@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    $("#moreInfo").click(function(){
+$(document).ready(function() {
+    $("#moreInfo").click(function () {
         $("dd").toggleClass("invisible")
 
     });
@@ -7,4 +7,9 @@ $(document).ready(function(){
 //     $("dt").click(function() {
 //         $(this).toggleClass("highlight");
 //     });
+    $("#highlightButton").click(function () {
+        $("ul").each(function () {
+            $(this).children().eq(3).toggleClass("highlight");
+        });
+    });
 });
