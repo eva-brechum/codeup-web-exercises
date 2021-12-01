@@ -22,6 +22,7 @@
     </thead>
     <tbody id="insertProducts"></tbody>
 </table>
+<button id="btn" type="button">Refresh</button>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
@@ -40,9 +41,15 @@
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
-    function appendTable(data, i) {
 
-    }
+
+
+
+        ("#btn").click(function(){
+            $.ajax("/data/inventory.json").done(function (items){
+                console.log(items);
+            })
+    })
 })();
 </script>
 

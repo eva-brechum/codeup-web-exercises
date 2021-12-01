@@ -34,7 +34,7 @@
     "quantity": 15,
     "categories": [
         "tool"
-    ]
-
+        ],
+    "price": 25
 }
 ]
