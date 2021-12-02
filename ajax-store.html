@@ -33,11 +33,27 @@
 (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-    // $.ajax({
-    //     url: "/data/inventory.json",
-    //     type: "GET",
-    // }).done(function (data) {
-    //     console.log(data);
+  function addTable(data, i) {
+      var table = "";
+      for (i = 0; i < data.length; i++) {
+          table += "<tr><td" + data[i].title + "</td>";
+          table += "<td>" + data[i].quantity + "</td>";
+          table += "<td>" + data[i].price + "</td>";
+          table += "<td>" + data[i].categories.join(",") + "</td>"
+      }
+      return table
+  }
+    $.ajax({
+        url: "/data/inventory.json",
+        type: "GET",
+    }).done(function (data) {
+        console.log(data);
+        $("#insertProducts").append(addTable(data))
+    })
+    //     ("#btn").click(function(){
+    //         $.ajax("/data/inventory.json").done(function (items){
+    //             console.log(items);
+    //         })
     // })
 
 
@@ -46,19 +62,14 @@
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
 
-   $.ajax("/data/inventory.json").done(function(data){
+   // $.ajax("/data/inventory.json").done(function(data){
     //         data.forEach(function (item) {
     //             table.append("" +
     //                 "<tr>" +
 
 
         // })
-        //     ("#btn").click(function(){
-        //         $.ajax("/data/inventory.json").done(function (items){
-        //             console.log(items);
-        //         })
-        // })
-    })
+
 })();
 </script>
 
