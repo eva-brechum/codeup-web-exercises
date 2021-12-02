@@ -50,11 +50,12 @@
         console.log(data);
         $("#insertProducts").append(addTable(data))
     })
-    //     ("#btn").click(function(){
-    //         $.ajax("/data/inventory.json").done(function (items){
-    //             console.log(items);
-    //         })
-    // })
+        ("#btn").click(function(){
+            $.ajax("/data/inventory.json").done(function (data) {
+                $("#insertProducts").table(addTable(data))
+                console.log(data);
+            })
+    })
 
 
     // TODO: Take the data from inventory.json and append it to the products table
