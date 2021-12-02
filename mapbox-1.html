@@ -25,7 +25,7 @@
         zoom: 12 // starting zoom
     });
     //TODO: After 5 seconds, use a method found in the documentation to fly to the DFW Airport and change the map style to satellite streets.
-    //      *BONUS* Create a button labeled "Zoom In", and when the button is clicked, increases the zoom value by 1.\
+
     setTimeout(function(){
     map.flyTo({
         center: [-97.83984256969189, 32.89923198186237],
@@ -33,6 +33,7 @@
     })
         map.setStyle()
     }, 5000)
+    //      *BONUS* Create a button labeled "Zoom In", and when the button is clicked, increases the zoom value by 1.\
 document.querySelector("#zoom").addEventListener("click",
 function() {
      map.setZoom(map.getZoom() + 1);
