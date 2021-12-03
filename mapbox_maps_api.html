@@ -9,16 +9,27 @@
 
 </head>
 <body>
-
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
 <div id='map' style='width: 400px; height: 300px;'></div>
 <script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoidm9sdGFxdWVlbiIsImEiOiJja3dwNnhxMG4wOXdjMm5vOHJ1bWtzeDAzIn0.lA8Xa4DN7OnXlBHItTVhrg';
+    mapboxgl.accessToken = MAPBOX_KEY;
     const map = new mapboxgl.Map({
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-74.5, 40], // starting position [lng, lat]
-        zoom: 9 // starting zoom
+        center: [-87.6298, 41.8781], // starting position [lng, lat]
+        zoom: 15,// starting zoom
     });
+
+  //  Marker for Bandit
+  var bandit = new mapboxgl.Marker({
+      color: "teal",
+  }).setLngLat([-87.6491, 41.8841])
+    .addTo(map)
+
+
+
+
 </script>
 </body>
 </html>
