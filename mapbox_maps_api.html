@@ -18,13 +18,21 @@
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
         center: [-87.6298, 41.8781], // starting position [lng, lat]
-        zoom: 15,// starting zoom
+        zoom: 12,// starting zoom
     });
 
-  //  Marker for Bandit
-  var bandit = new mapboxgl.Marker({
+
+
+  //  Marker for The Bandit
+  const theBandit = new mapboxgl.Marker({
       color: "teal",
   }).setLngLat([-87.6491, 41.8841])
+      .addTo(map)
+
+    // POPUP
+    var popup = new mapboxgl.Popup()
+        .setLngLat(theBandit.getLngLat())
+        .setHTML("<h3>The Bandit</h3>")
     .addTo(map)
 
 
