@@ -18,7 +18,7 @@
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
         center: [-87.6298, 41.8781], // starting position [lng, lat]
-        zoom: 12,// starting zoom
+        zoom: 8,// starting zoom
     });
 
 
@@ -29,12 +29,17 @@
   }).setLngLat([-87.6491, 41.8841])
       .addTo(map)
 
-    // POPUP
-    var popup = new mapboxgl.Popup()
-        .setLngLat(theBandit.getLngLat())
-        .setHTML("<h3>The Bandit</h3>")
-    .addTo(map)
 
+
+
+    // POPUP
+    map.on("click", function(){
+        var popup = new mapboxgl.Popup({offset: 25})
+            .setLngLat(theBandit.getLngLat())
+            .setHTML("<h3>The Bandit</h3> <br> <img src='/img/thebandit.jpeg'/>")
+            .addTo(map) ;
+        marker.setPopup(theBandit);
+    });
 
 
 
