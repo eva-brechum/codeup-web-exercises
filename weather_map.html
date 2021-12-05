@@ -8,7 +8,8 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <!--   my custom css-->
     <link rel="stylesheet" href="/css/weather_map.css">
-
+    <!--    Mapbox JS-->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <!--mapbox cdn-->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet' />
@@ -17,12 +18,28 @@
 <body>
 
 <h1 class ="text-center title">Weather in</h1>
-<div class= "container-fluid" id='map' style='width: 100%; height: 300px;'></div>
-
+<!--Form for search weather in current location-->
 <div class ="container my-5">
-    <div class = "container-fluid"></div>
+    <form class = "search location">
+        <input type="text"
+               name="city"
+               placeholder="Current Location"
+               autocomplete="off"
+               class="form-control text-muted form-rounded p-4 shadow-md"/>
+    </form>
+    <button type="button" id="find">Find</button>
 
+<!--    Card for weather-->
+    <div class="card rounded my-3 shadow-lg back-card"></div>
+    <div class="card-top text-center"></div>
+        <div class="city-name my-3">
+            <p>Houston</p>
+    </div>
 </div>
+<!--    Map will need Marker, Popups and Geocoding-->
+    <div class= "container-fluid" id='map' style='width: 100%; height: 300px;'></div>
+
+
 
 <!--jQuery and Bootstrap Bundle -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -37,8 +54,7 @@
         crossorigin="anonymous"></script>
 <!--API keys-->
 <script src="js/keys.js"></script>
-<!--    Mapbox JS-->
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
 <!--Geocoder-->
 <script src="js/mapbox-geocoder-utils.js"></script>
 <!--JavaScript-->
