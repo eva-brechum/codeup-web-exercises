@@ -27,20 +27,22 @@ $(document).ready(function(){
         zoom: 9 // starting zoom
     });
 
-    var Marker= new mapboxgl.Marker()
-        .setLngLat([long,lat])
+    var placeMarker= new mapboxgl.Marker()
+        .setLngLat([lng,lat])
         .setDraggable(true)
-        .addTo(map);
-
-    var placeMarker = new mapboxgl.Marker({
-        draggable:true
+        placeMarker.addTo(map);
+    placeMarker.on("dragend",function(){
+    console.log();
     })
-    houstonMarker
-        .setLngLat([lon, lat])
-        .addTo(map);
+    //
+    // var Marker = new mapboxgl.Marker({
+        // draggable:true
+
+
 // WHEN THE USER CLICKS THE FIND BUTTON, THE MARKER WILL HIGHLIGHT THE USER CURRENT CITY
 //     $("#find").click(function(e){
 //         e.preventDefault();
+//         var
 //     })
 //
 //      houstonMarker.on("dragend", function () {
