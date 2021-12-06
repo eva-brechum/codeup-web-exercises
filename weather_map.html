@@ -16,10 +16,14 @@
 
 </head>
 <body>
+<!--CAN USE NAVBAR INSTEAD?-->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+    </div>
 
-    <h1 class ="text-center title">Weather in</h1>
-    <!--Form for search weather in current location-->
-    <div class ="container my-5">
+    <h1 class ="text-center title" style="color:blue">Weather App</h1>
+<!--    Form for search weather in current location-->
         <form class = "search location">
             <input type="text"
                    name="city"
@@ -28,23 +32,47 @@
                    class="form-control text-muted form-rounded p-4 shadow-sm"/>
         </form>
         <button type="button" id="find">Find</button>
-
+</nav>
     <!--    Card for weather-->
-        <section class="container row" id="weather-forecast-container">
-            <div>
-                <div class="icon"><img id="weather_icon" src="" alt="weather icon"></div>
-                <div class="icon"><img id="weather_icon2" src="" alt="weather icon"></div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-header" id="current weather">
+                <p id="current-day"></p>
             </div>
-        </section>
-        <div class="card rounded my-3 shadow-lg back-card"></div>
-        <div class="card-top text-center"></div>
-            <div class="city-name my-3">
-                <p>Houston</p>
-                <span>...</span>
-            </div>
-
-    </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">icon</li>
+                <li class="list-group-item">description</li>
+                <li class="list-group-item">Precipitation</li>
+            </ul>
+        </div>
+<!--        -->
+<!--        <section class="container row" id="weather-forecast-container">-->
+<!--            <div>-->
+<!--                <div class="icon"><img id="weather_icon" src="" alt="weather icon"></div>-->
+<!--                <div class="icon"><img id="weather_icon2" src="" alt="weather icon"></div>-->
+<!--            </div>-->
+<!--        </section>-->
+<!--        <div class="card rounded my-3 shadow-md back-card"></div>-->
+<!--        <div class="card-top text-center"></div>-->
+<!--            <div class="city-name my-3">-->
+<!--                <p>Houston</p>-->
+<!--                <span>...</span>-->
+<!--            </div>-->
+<!--&lt;!&ndash;        I want to add an image to the card here&ndash;&gt;-->
+<!--        <div class="card-body">-->
+<!--            <div class="row">-->
+<!--                <div class="text-center temp">-->
+<!--                    <span> 70&deg;F</span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div>-->
+<!--                <p>Cloudy</p>-->
+<!--                <p>66&deg;F</p>-->
+<!--                <p>73&deg;F</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <!--    Map will need Marker, Popups and Geocoding-->
+    <br>
         <div class= "container-fluid" id='map' style='width: 100%; height: 300px;'></div>
 
 
