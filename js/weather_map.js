@@ -27,17 +27,17 @@ $(document).ready(function(){
         zoom: 9 // starting zoom
     });
 
-    // var houstonMarker= new mapboxgl.Marker()
-    //     .setLngLat([long,lat])
-    //     // .setDraggable(true)
-    //     .addTo(map);
+    var Marker= new mapboxgl.Marker()
+        .setLngLat([long,lat])
+        .setDraggable(true)
+        .addTo(map);
 
-    // var placeMarker = new mapboxgl.Marker({
-    //     draggable:true
-    // })
-    // houstonMarker
-    //     .setLngLat([lon, lat])
-    //     .addTo(map);
+    var placeMarker = new mapboxgl.Marker({
+        draggable:true
+    })
+    houstonMarker
+        .setLngLat([lon, lat])
+        .addTo(map);
 // WHEN THE USER CLICKS THE FIND BUTTON, THE MARKER WILL HIGHLIGHT THE USER CURRENT CITY
 //     $("#find").click(function(e){
 //         e.preventDefault();
