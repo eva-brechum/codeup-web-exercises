@@ -27,10 +27,12 @@ $(document).ready(function(){
         units: "imperial"
         }).done(function(data) {
         console.log("5 day forecast", data);
+        //to input weather icons//
+
         $("#weather_icon").attr("src", "http://openweathermap.org/img/w/04n.png")
             // + data.daily[0].weather[0].icon
         $("#weather_icon2").attr("src", " http://openweathermap.org/img/w/02d.png")
-        console.log(new Date(data.daily[0].dt * 1000));
+        // console.log(new Date(data.daily[0].dt * 1000));
     })
 
     mapboxgl.accessToken = MAPBOX_KEY
