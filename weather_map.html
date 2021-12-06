@@ -22,22 +22,25 @@
 <!--    Form for search weather in current location-->
         <form class = "form-inline">PLACE
             <input type="text"
-                   placeholder="What city are you in"
+                   placeholder="Current city"
+                   id="userInput"
                    class="form-control p-4 shadow-sm"/>
         <button class="btn btn-info" type="submit" id="find">Find</button>
         </form>
 </nav>
     <!--    Card for weather-->
-        <div class="card" style="width: 18rem;">
-            <div class="card-header" id="current weather">
-                <p id="current-day"></p>
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">icon</li>
+        <div class="card" id="main-weather-container" style="width: 18rem;">
+            <div class="card-header" id="current-weather">
+                <h2 id="current-day">Today is</h2>
+                <img class="forecast-icon" id="forecast-icon">
+                <ul class="list-group listgroup-flush">
                 <li class="list-group-item">description</li>
-                <li class="list-group-item">Precipitation</li>
+                <li class="list-group-item">Temperature</li>
             </ul>
         </div>
+        </div>
+<br>
+<div class= "container-fluid" id='map' style='width: 100%; height: 300px;'></div>
 <!--        -->
 <!--        <section class="container row" id="weather-forecast-container">-->
 <!--            <div>-->
@@ -66,10 +69,6 @@
 <!--        </div>-->
 <!--    </div>-->
     <!--    Map will need Marker, Popups and Geocoding-->
-    <br>
-        <div class= "container-fluid" id='map' style='width: 100%; height: 300px;'></div>
-
-
 
     <!--jQuery and Bootstrap Bundle -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
