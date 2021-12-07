@@ -22,11 +22,13 @@ $(document).ready(function(){
             units: request.units,
             lang: request.lang,
         }).done(function (data) {
+            for(let i= 0; i < 5; i++){
             var date = new Date (data.current.dt * 1000)
             $("#current-day").text("Today is " + date.toLocaleDateString())
             $("#forecast-icon").attr( 'src', `http://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`)
-            // $("#forecast-temperature").attr(${day.temp.morn})
+            $("#forecast-temperature").text(`${data.current.temp}`)
             console.log(data)
+        }
         })
     }
     handleWeatherAPI();
