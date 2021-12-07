@@ -25,7 +25,7 @@ $(document).ready(function(){
             var date = new Date (data.current.dt * 1000)
             $("#current-day").text("Today is " + date.toLocaleDateString())
             $("#forecast-icon").attr( 'src', `http://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`)
-
+            // $("#forecast-temperature").attr(${day.temp.morn})
             console.log(data)
         })
     }
