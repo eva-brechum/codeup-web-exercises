@@ -1,22 +1,42 @@
 "use strict";
 $(document).ready(function(){
 
-    // Make API Call for weather info
-    $.get("https://api.openweathermap.org/data/2.5/weather", {
-                APPID: OPEN_WEATHER_KEY,
-                lat: 29.7604,
-            lon: -95.3698,
-        units: "imperial"
-        }).done(function(data) {
-        console.log("5 day forecast", data);
+    let request = {
+        lat: 29.7604,
+        lon: -95.3698,
+        exclude: ["munitely", "hourly"],
+        units: "imperial",
+        lang: "en",
+    }
+
+    function handleWeatherAPI () {
+// ask API for data
+
+        // Make API Call for weather info
+        $.get("https://api.openweathermap.org/data/2.5/onecall", {
+            APPID: OPEN_WEATHER_KEY,
+            lat: request.lat,
+            lon: request.lon,
+            exclude:
+                request.exclude.join(","),
+            units: request.units,
+            lang: request.lang,
+        }).done(function (data) {
+            var date = new Date (data.current.dt * 1000)
+            $("#current-day").text("Today is " + date.toLocaleDateString())
+            $("#forecast-icon").attr( 'src', `http://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`)
+
+            console.log(data)
+        })
+    }
+    handleWeatherAPI();
         //to input weather icons//
 
 
-        $("#forecast-icon").attr("src", "http://openweathermap.org/img/w/04n.png")
-            // + data.daily[0].weather[0].icon + "png");
-        // $("#forecast-icon").attr("src", " http://openweathermap.org/img/w/02d.png")
-        // // console.log(new Date(data.daily[0].dt * 1000));
-    })
+    //         // + data.daily[0].weather[0].icon + "png");
+    //     // $("#forecast-icon").attr("src", " http://openweathermap.org/img/w/02d.png")
+    //     // // console.log(new Date(data.daily[0].dt * 1000));
+    // })
 
 
     mapboxgl.accessToken = MAPBOX_KEY
@@ -27,13 +47,15 @@ $(document).ready(function(){
         zoom: 9 // starting zoom
     });
 
-    var placeMarker= new mapboxgl.Marker()
-        .setLngLat([lng,lat])
-        .setDraggable(true)
-        placeMarker.addTo(map);
-    placeMarker.on("dragend",function(){
-    console.log();
-    })
+    var Marker= new mapboxgl.Marker()
+        .setLngLat({lng:request.lon, lat:request.lat})
+        .setDraggable(true);
+        Marker.addTo(map);
+
+    //
+    // placeMarker.on("dragend",function(){
+    // console.log();
+    // })
     //
     // var Marker = new mapboxgl.Marker({
         // draggable:true
