@@ -24,9 +24,11 @@ $(document).ready(function(){
         }).done(function (data) {
             for(let i= 0; i < 5; i++){
             var date = new Date (data.current.dt * 1000)
-            $("#current-day").text("Today is " + date.toLocaleDateString())
+                const days = new Date(data.current.dt * 1000).toString().substring(0, 4);
+            $("#current-day").text(`Today is ${days} ${date.toLocaleDateString()}`)
             $("#forecast-icon").attr( 'src', `http://openweathermap.org/img/wn/${data.current.weather[0].icon}.png`)
-            $("#forecast-temperature").text(`${data.current.temp}`)
+            $("#forecast-temperature").text(`${data.current.temp}\u00B0 F`)
+             $("#forecast-description").text(`${data.current.weather[0].description}`)
             console.log(data)
         }
         })

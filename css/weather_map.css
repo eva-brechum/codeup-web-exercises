@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+
     background-color:peachpuff;
 }
 
@@ -14,17 +15,3 @@ body{
 }
 
 
-
-/*.city-name p {*/
-/*    font-size: xx-large;*/
-/*    font-weight: 500;*/
-
-/*}*/
-
-/*.city-name span {*/
-/*    font-weight: 500;*/
-/*    font-size: large;*/
-/*    font-family: "Times New Roman", Times, serif;*/
-/*    position: center;*/
-/*    top: -40px;*/
-/*}*/
