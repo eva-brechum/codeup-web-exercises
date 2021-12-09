@@ -7,7 +7,18 @@ fetch(`https://api.github.com/users/${userName}/events`,{headers: {'Authorizatio
     })};
 lastCommit("eva-brechum");
 
-// const wait = ()
+const wait = (number) => {
+    return new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve()
+        }, 1000)
+    });
+};
+// wait(1000). then(() => console.log())
+wait(1000).then(() => console.log('You\'ll see this after 1 second'));
+wait(3000).then(() => console.log('You\'ll see this after 3 seconds'));
+
+
 
 
 
