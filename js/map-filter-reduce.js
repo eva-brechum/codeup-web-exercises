@@ -56,7 +56,7 @@ let totalYears = users.reduce((total, person) => {
 console.log(totalYears);
 
 //     Use .reduce to get the longest email from the list of users.
-let longestEmail = email.reduce((currentEmail, longEmail) => {
+let longestEmail = users.reduce((currentEmail, longEmail) => {
     if(currentEmail.length > longEmail.length) return currentEmail;
     return longEmail
     }, "")
@@ -64,6 +64,6 @@ console.log(longestEmail);
 
 //     Use .reduce to get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
 let userName = users.reduce((total,users) =>  {
-    return total += `Your instructors are ${acc} ${userName},`,)
-});
-console.log(userString);
+    return total += `${users.name}`;},''
+);
+console.log(userName);
