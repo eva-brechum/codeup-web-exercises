@@ -20,16 +20,17 @@
         crossorigin="anonymous"></script>
 <script>
     function blogPost(data, i){
-        const html= "";
+        var html= "";
         for (i =0; i < data.length; i++){
             html += "<div>" + data[i].title + "</div>";
+            html += "<div>" + data[i].content + "</div>";
         }
         return html
     }
     $.ajax("data/blog.json",{
         "type": "POST"
     }).done(function (data) {
-        $("#posts").append(blogPost(data);
+        $("#posts").append(blogPost(data));
         console.log(data)
     })
 </script>
