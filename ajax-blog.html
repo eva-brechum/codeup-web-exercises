@@ -7,8 +7,19 @@
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous">
 </head>
-<body>
-<div id="posts"></div>
+<body style="background-color: powderblue">
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">MY FIRST BLOG</span>
+    </div>
+</nav>
+    <div class="container">
+        <div class="col align-self-center">
+        <div class="card border-success mb-3" style="max-width: 100%">
+        <div id="posts" ></div>
+        </div>
+        </div>
+    </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -21,7 +32,7 @@
 <script>
     function blogPost(data, i){
         var html= "";
-        for (i =0; i < data.length; i++){
+        for (i =0; i <data.length; i++){
             html += "<div>" + data[i].title + "</div>";
             html += "<div>" + data[i].content + "</div>";
         }
