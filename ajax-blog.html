@@ -33,7 +33,9 @@
     function blogPost(data, i){
         var html= "";
         for (i =0; i <data.length; i++){
+            html += "<div>" + data[i].date + "</div>";
             html += "<div>" + data[i].title + "</div>";
+            html += "<div>" + data[i].content + "</div>";
             html += "<div>" + data[i].content + "</div>";
         }
         return html
